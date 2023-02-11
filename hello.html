@@ -1,0 +1,64 @@
+<html>
+  <head>
+    <script>
+      var clickCount = 0;
+
+      function shuffleButton() {
+        var x = Math.floor(Math.random() * window.innerWidth);
+        var y = Math.floor(Math.random() * window.innerHeight);
+        document.getElementById("noButton").style.left = x + "px";
+        document.getElementById("noButton").style.top = y + "px";
+
+        clickCount++;
+          if (clickCount === 2) {
+            alert("Habulin mo yung NO button");
+          }
+          else if (clickCount === 4)
+          {
+            alert("What if YES pindutin mo?");
+          }
+          else if (clickCount === 6){
+            alert("Bahala ka pakahirap ka dyan");   
+          }
+        
+      }
+
+      function showPrompt() {
+        alert("Yeeeeeeeeeeyy!! Ang cutie mooo!!");
+      }
+    </script>
+    <style>
+      #question {
+        font-size: 18px;
+        font-weight: bold;
+        text-align: center;
+        margin-top: 100px;
+      }
+
+      .button {
+        padding: 10px 20px;
+        border: 2px solid black;
+        border-radius: 5px;
+        position: absolute;
+        cursor: pointer;
+      }
+
+      #yesButton {
+        top: 30%;
+        left: 45%;
+        transform: translate(-50%, -50%);
+      }
+
+      #noButton {
+        top: 30%;
+        left: 55%;
+        transform: translate(-50%, -50%);
+      }
+    </style>
+  </head>
+  <body>
+    <div id="question">Will u be mine?</div>
+    <button id="yesButton" class="button" onclick="showPrompt()">Yes</button>
+    <button id="noButton" class="button" onclick="shuffleButton()">No</button>
+  </body>
+</html>
