@@ -1,0 +1,125 @@
+body{
+    background-image: url(../resources/diagmonds.png);
+    color:rgb(255, 255, 255);
+    margin: 0px;
+}
+
+
+.profile{
+    width: 400px;
+    display: inline;
+    float: right;
+}
+
+.lyrics{
+    font-weight: bold;
+    font-family: sans-serif;
+    font-size: 10px;
+    line-height: 8px;
+    text-align: justify;
+
+    padding-left:30px;
+    width: 600px;
+    display: block;
+    float: right;
+    text-transform: lowercase;
+    
+    background:url(/Portfolio/resources/img.jpg);
+    background-size: contain ;
+    background-position:center;
+    background-repeat: no-repeat;
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:rgba(255, 255, 255, 0);
+}
+
+header{
+    margin-top: 20px;
+    display: flex;
+    max-width: 65%;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+}
+
+.logo{
+    width: 120px;
+    filter: drop-shadow(0 0 0.9rem rgb(0, 204, 255));
+}
+
+nav.navbar{
+    font-size: 15px;
+    margin: 0;
+    display: inline;
+    align-items: center;
+    float:right;
+    display: inline-flex;
+    align-items: center;
+}
+
+a{
+    color: #606470;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-family: sans-serif;
+    padding: 22px;
+    text-decoration: none;
+}
+a:hover{
+    color: #bebebe;
+}
+
+.container{
+    padding-top: 50px;
+    max-width: 65%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h1{
+    color: #7fd9ff;
+    padding-left: 15px;
+    padding-top: 100px;
+    padding-right: 600px;
+    margin: 0;
+    font-size: 20px;
+    font-family: sans-serif;
+    text-transform: uppercase;
+}
+
+.intro-p{
+    color: #F7F7F7;
+    padding: 0px 600px 0px 15px;
+    font-size: 50px;
+    font-family: sans-serif;
+    text-transform: uppercase;
+    
+}
+
+.short-desc-p{
+    color: #606470;
+    padding-left: 15px;
+    padding-right: 600px;
+    font-size: 25px;
+    font-family: sans-serif;
+}
+
+.socials-icon{
+    padding-top: 50px;
+}
+
+.fb{
+    padding-left: auto;
+    font-size: 35px;
+}
+
+.ig{
+    font-size: 35px;
+}
+
+.git{
+    font-size: 35px;
+}
+
