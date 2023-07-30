@@ -26,7 +26,7 @@ body{
     float: right;
     text-transform: lowercase;
     
-    background:url(./resources/img.png);
+    background:url(portfolio/resources/img.png);
     background-size: contain ;
     background-position:center;
     background-repeat: no-repeat;
@@ -47,7 +47,7 @@ body{
     float: right;
     text-transform: lowercase;
     
-    background:url(./resources/img.png);
+    background:url(portfolio/resources/img.png);
     background-size: contain ;
     background-position:center;
     background-repeat: no-repeat;
