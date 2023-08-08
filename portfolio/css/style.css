@@ -1,7 +1,7 @@
 body{
     background-image: url(../resources/diagmonds.png);
     color:rgb(255, 255, 255);
-    margin: 0px;
+    margin: 0px 0px 0px 0px;
 }
 
 
@@ -26,12 +26,13 @@ body{
     float: right;
     text-transform: lowercase;
     
-    background:url(../resources/img.png);
+    background:url(/Portfolio/resources/img.png);
     background-size: contain ;
     background-position:center;
     background-repeat: no-repeat;
     -webkit-background-clip:text;
     -webkit-text-fill-color:rgba(255, 255, 255, 0);
+    user-select: none;
 }
 
 .lyrics:hover{
@@ -47,7 +48,7 @@ body{
     float: right;
     text-transform: lowercase;
     
-    background:url(../resources/img.png);
+    background:url(/Portfolio/resources/img.png);
     background-size: contain ;
     background-position:center;
     background-repeat: no-repeat;
@@ -56,7 +57,7 @@ body{
 }
 
 header{
-    margin-top: 20px;
+    padding: 20px;
     display: flex;
     max-width: 65%;
     flex-direction: row;
@@ -64,7 +65,8 @@ header{
     align-items: center;
     margin-left: auto;
     margin-right: auto;
-    display: flex;
+    position: sticky;
+    top: 0;
 
 }
 
@@ -108,12 +110,12 @@ a:hover{
     margin-bottom: 120px;
     margin-left: auto;
     margin-right: auto;
+    display: flow-root;
 }
 
 h1.header{
     color: #7fd9ff;
     padding-left: 15px;
-    padding-top: 100px;
     padding-right: 600px;
     margin: 0;
     font-size: 20px;
@@ -163,7 +165,7 @@ p{
     font-size: 35px;
 }
 
-.about-me{
+#about-me{
     width: 1000px;
     max-width: 65%;
     margin-left: auto;
@@ -215,7 +217,7 @@ span{
     margin-right: 10px;
 }
 
-.tech-stack{
+#tech-stack{
     max-width: 65%;
     margin-left: auto;
     margin-right: auto;  
@@ -227,7 +229,7 @@ span{
     font-size: 100px;
 }
 
-.contacts{
+#contacts{
     max-width: 65%;
     margin-left: auto;
     margin-right: auto;    
@@ -244,10 +246,29 @@ span{
 }
 
 footer{
+    padding-top: 10px;
+    padding-bottom: 10px;
     margin-left: auto;
     margin-right: auto;   
+    justify-content: center;
     text-align: center;
+    background-color: #7fd9ffc5;
+    font-family: sans-serif;
+    font-size: 15px;
+    text-transform: capitalize;
+    font-weight: normal;
+    color: #606470;
 }
 
+.rights{
+    justify-content: center;
+}
+
+.footer-email{
+    font-family: sans-serif;
+    font-size: 15px;
+    text-transform: capitalize;
+    color: #606470;
+}
 
 
