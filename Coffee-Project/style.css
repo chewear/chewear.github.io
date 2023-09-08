@@ -44,6 +44,7 @@ aside{
     left:0;
     bottom:0;
     margin-bottom: 50px;
+    z-index: 0;
 }
 
 header{
@@ -202,7 +203,10 @@ h1{
     height: 40px;
     border-radius: 50px;
     border:brown solid 2px;
+    z-index: 1;
+    position: relative;
 }
+
 
 .searchButton, .cartButton, .shopNowdiv :hover{
     cursor: pointer;
