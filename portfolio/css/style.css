@@ -2,7 +2,11 @@ body{
     background-image: url(../resources/diagmonds.png);
     color:rgb(255, 255, 255);
     margin: 0px 0px 0px 0px;
+    padding: 0 0 0 0;
+    
+  
 }
+
 
 
 .profile{
@@ -10,8 +14,10 @@ body{
     display: inline;
     float: right;
 }
-
-
+.image{
+    width: 550px;
+    
+}
 
 .lyrics{
     font-weight: bold;
@@ -21,18 +27,18 @@ body{
     text-align: justify;
 
     padding-left:30px;
-    width: 600px;
-    display: block;
+    width: 550px;
     float: right;
     text-transform: lowercase;
     
-    background:url(../resources/img.png);
+    background:url(/Portfolio/resources/img.png);
     background-size: contain ;
     background-position:center;
     background-repeat: no-repeat;
     -webkit-background-clip:text;
     -webkit-text-fill-color:rgba(255, 255, 255, 0);
     user-select: none;
+
 }
 
 .lyrics:hover{
@@ -43,12 +49,12 @@ body{
     text-align: justify;
 
     padding-left:30px;
-    width: 600px;
+    width: 550px;
     display: block;
     float: right;
     text-transform: lowercase;
     
-    background:url(../resources/img.png);
+    background:url(/Portfolio/resources/img.png);
     background-size: contain ;
     background-position:center;
     background-repeat: no-repeat;
@@ -57,22 +63,20 @@ body{
 }
 
 header{
+    max-width: 65%;
     padding: 20px;
     display: flex;
-    max-width: 65%;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
     margin-left: auto;
     margin-right: auto;
-    position: sticky;
-    top: 0;
-
+    
 }
 
 .logo{
-    width: 120px;
-    filter: drop-shadow(0 0 0.6rem rgb(0, 225, 255));
+    width: 80px;
+    filter: drop-shadow(0 0 0.9rem rgb(255, 81, 0));
 }
 
 nav.navbar{
@@ -83,13 +87,10 @@ nav.navbar{
     float:right;
     display: inline-flex;
     align-items: center;
+   
 }
 
-/*
-.socials-icon-nav{
-    display: block;
-}
-*/
+
 
 a{
     color: #606470;
@@ -106,21 +107,30 @@ a:hover{
 
 .container{
     max-width: 65%;
-    margin-top: 100px;
+    margin-top: 50px;
     margin-bottom: 120px;
     margin-left: auto;
     margin-right: auto;
-    display: flow-root;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    
+}
+
+.container-contents{
+    
+    width: 700px;   
 }
 
 h1.header{
+    margin-top: 50px;
     color: #7fd9ff;
     padding-left: 15px;
-    padding-right: 600px;
-    margin: 0;
     font-size: 20px;
     font-family: sans-serif;
     text-transform: uppercase;
+    width: 650px;
+    
 }
 
 p{
@@ -129,27 +139,42 @@ p{
     font-family: sans-serif;
 }
 
+.username{
+    color: #ecb349;
+    display: inline;
+    box-shadow: inset 0 0 0 0 #ffffff;
+    transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
+    cursor: pointer;
+}
 
+.username:hover{
+    box-shadow: inset 265px 0 0 0 #89e9fc;
+    color: #d63b2c;
+}
 
 .intro-p{
     color: #F7F7F7;
-    padding: 0px 600px 0px 15px;
+    padding: 0px 0px 0px 15px;
     font-size: 50px;
     font-family: sans-serif;
     text-transform: uppercase;
+    width: 650px;
     
 }
 
 .short-desc-p{
     color: #606470;
     padding-left: 15px;
-    padding-right: 600px;
     font-size: 25px;
     font-family: sans-serif;
+    width: 650px;
+    
 }
 
 .socials-icon{
     padding-top: 50px;
+    width: 650px;
+    
 }
 
 .fb{
@@ -172,6 +197,7 @@ p{
     margin-right: auto;
     margin-top: 300px;
     margin-bottom: 300px;
+    
 }
 
 
@@ -248,6 +274,7 @@ span{
 footer{
     padding-top: 10px;
     padding-bottom: 10px;
+    bottom: 0;
     margin-left: auto;
     margin-right: auto;   
     justify-content: center;
