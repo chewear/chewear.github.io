@@ -45,6 +45,8 @@ aside{
     left:0; 
     margin-top: 500px;
     margin-bottom: 50px;
+    -webkit-filter: drop-shadow(5px 5px 5px #000000);
+    filter: drop-shadow(5px 5px 5px #000000);
 }
 
 header{
@@ -270,6 +272,9 @@ h2{
     animation-name: slideleft;
     animation-duration: 2s ;
     animation-timing-function: ease-in;
+
+    -webkit-filter: drop-shadow(5px 5px 5px #000000);
+    filter: drop-shadow(5px 5px 5px #000000);
 }
 
 .sampleImage:hover{
@@ -298,6 +303,7 @@ main{
     right: 0;
     z-index: -1;
 }
+
 
 .intro{
     animation-name: slideright;
@@ -330,7 +336,6 @@ main{
 .story{
     width: 100vw;
     height: 80vh;
-    margin:10vh 0 10vh 0;
     overflow: hidden;
     position: relative;
     display: flex;
@@ -402,11 +407,25 @@ main{
     width: 100vw;
     height: 100vh;
     display: flex;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
+    background-color: #f2e6ce;
+}
+
+.product-h1{
+    font-family: Inline;
+    font-size: 7vh;
+    font-weight: normal;
+    margin: 0;
+    margin-bottom: 16px;
+    padding: 16px;
+    background-color: brown;
+    box-shadow: 8px 8px #E6AA54;
 }
 
 .carousel-container{
-    width: 100%;
+    width: 90%;
     height: 80vh;
     margin: 0 auto;
     display: flex;
@@ -415,14 +434,12 @@ main{
 }
 
 .box{
-    height: 80vh;
+    height: 70vh;
     margin:0 0;
-    background-color: orange;
     border-right: 1px solid rgba(0, 0, 0, 0.322);
     box-sizing: border-box;
     flex: 1;
     transition: 0.6s ease-in;
-    filter: brightness(0.8);
     display: flex;
     justify-content: center;
     align-items: flex-start;
@@ -475,4 +492,282 @@ main{
 
 .box:hover h2{
     opacity: 1;
+}
+
+.shop{
+    width: 100vw;
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.shop-container{
+    width: 100vw;
+    height: 40vh;
+    display: flex;
+    flex-direction:row;
+    align-items: center;
+    overflow: hidden;
+}
+
+.shop-order{
+    width: 50vw;
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.shop-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    font-weight: normal;
+}
+
+.shopImage-container{
+    position: absolute;
+    z-index: -1;
+    overflow: hidden;
+}
+
+.shopImage{
+    object-position: center;
+    object-fit: cover;
+    width: 50vw;
+    height: 40vh;
+    margin: 0 auto;
+    transition: 3s ease-in-out;
+    filter: brightness(0.5);
+    overflow: hidden;
+    z-index: -1;
+}
+
+.shop-order:hover .shopImage{
+    transform: scale(1.1);
+}
+
+.shop-a{
+    text-decoration: none;
+    color: #F5E6CD;
+}
+
+.shop-h1{
+    font-size: 3.3vh;
+}
+
+.contact{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    margin-bottom: -15%;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.form-container{
+    width: 48vw;
+    height: 56vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.form{
+    border-radius: 32px 0 0 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 24vw;
+    height: 56vh;
+    background-image: url(resources/coffee-pattern.png);
+    background-position: center;
+    background-repeat: none;
+    background-size: contain;
+    box-shadow:  15px 15px 30px #191118;
+}
+
+.form-content{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 70%;
+    width: 70%;
+    padding: 15%;
+}
+
+.area{
+    margin-bottom: 2vh;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #20161F;
+    width: 100%;
+    height: 3vh;
+    padding: 5px;
+    padding-left: 0;
+    font-size: 16px;
+    font-family: Oswald;
+    font-weight: light;
+    color: #20161F;
+}
+
+.area::-webkit-input-placeholder {
+    color: #20161F;
+}
+
+.area:focus {
+    outline: none;
+    border-bottom: 1px solid rgb(90, 82, 89);
+}
+
+textarea{
+    margin-bottom: 2vh;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #20161F;
+    width: 100%;
+    resize: none;
+    font-size: 16px;
+    font-family: Oswald;
+}
+
+textarea:focus{
+    outline: none;
+    border-bottom: 1px solid rgb(148, 148, 148);
+}
+
+#submit-btn{
+    width: 112px;
+    height: 48px;
+    background-color: brown;
+    border: none;
+    border-radius: 16px;
+    color: #F5E6CD;
+    font-family: Oswald;
+    font-size: 16px;
+}
+#submit-btn:hover{
+    cursor: pointer;
+}
+
+.h3-contact-title{
+    margin-top: 0px;
+    margin-bottom: 8px;
+    font-size: 24px;
+    padding: 8px;
+    padding-left: 0;
+    color: #20161F;
+}
+
+.contact-info{
+    border-radius: 0 32px 32px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 24vw;
+    height: 56vh;
+    background: linear-gradient(145deg, #221821, #1d141c);
+    box-shadow:  15px 15px 30px #191118;
+}
+
+.icon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    width: 50px;
+    height: 50px;
+    border: 1px solid #F5E6CD;
+    border-radius: 64px;
+}
+
+.form-h3{
+    margin-top: 0px;
+    margin-bottom: 8px;
+    font-size: 24px;
+    font-weight: normal;
+    background-color: brown;
+    box-shadow: 3px 3px #E6AA54;
+    padding: 8px;
+    display: inline;
+    width: fit-content;
+}
+
+.label{
+    display: block;
+    width: 250px;
+    padding-left: 20px;
+    font-weight: light;
+    color: #f5e6cd98;
+}
+
+.contact-span{
+    display: inline;
+    font-weight: normal;
+    color: #F5E6CD  ;
+}
+
+.info-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 64px;
+}
+
+footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+svg{
+    margin-bottom: 0;
+}
+.footer-contents{
+    margin: 0;
+    height: 30vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #efe6cf;
+    color: brown;
+}
+
+.footer-h3{
+    font-size:32px;
+    margin: 0;
+}
+
+.footer-p{
+    font-size:16px;
+}
+
+.footer-icons, 
+.footer-icons a
+{
+    display: flex;
+    width: 20%;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-evenly;
+    font-size: 32px;
+    color: brown;
+    text-decoration: none;
+    margin-top: 3vh;
+}
+
+.footer-e{
+    font-size: 16px;
 }
