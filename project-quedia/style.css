@@ -1,0 +1,144 @@
+@font-face {
+    font-family: Actor;
+    src: url(resources/Actor/Actor-Regular.ttf);
+}
+
+body{
+    margin: 0 0;
+    padding: 0 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    font-family: Actor;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 100vh;
+    background: rgb(48,0,97);
+    background: linear-gradient(0deg, rgba(48,0,97,1) 0%, rgba(15,15,15,1) 100%);
+    overflow: hidden;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 90%;
+    padding: 3vh;
+}
+
+.logo{
+    width: 3vw;
+}
+
+.navBar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-left: -8vw;
+    margin-right: 8vw;
+}
+
+.navBar li{
+    width:8.2vw;
+    height: 3.3vh;
+    padding: 1vh;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2vh;
+}
+
+.navBar a{
+    text-decoration: none;
+    color: white;
+}
+
+.button{
+    padding: 6.6vh;
+}
+
+.sign{
+    height: 5.5vh;
+    width: 6vw;
+    cursor: pointer;
+    color: white;
+}
+
+#sign-in{
+    border: none;
+    background: transparent;
+    font-family: Actor;
+    font-size: 2vh;
+}
+
+#sign-up{
+    background: transparent;
+    border: 0.21vh solid gray;
+    border-radius: 2vh;
+    font-family: Actor;
+    font-size: 2vh;
+}
+
+.container{
+    width: 80%;
+    height: 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.text{
+    width: 50%;
+    padding: 8vh 20vw;
+    padding-left: 8vw;
+    font-size: 1.64vh;
+}
+
+.text p{
+    color: #BDBDBD;
+}
+
+.image{
+    width: 50%;
+    padding-right: 8vw;
+}
+
+.image img{
+    width: 25vw;
+}
+
+h1{
+    font-size: 5vh;
+    font-weight: bold;
+}
+
+.astro{
+    position: absolute;
+    right: 10vh;
+    bottom: 10vh;
+    float:right;
+    padding-right: 3vw;
+}
+
+.astro img{
+    width: 15vw;
+}
+
+.gradient {
+    background: linear-gradient(179deg, #530061 0.58%, #0D0A30 157.84%);
+    content: '';
+    border-top-left-radius: 50% 100%;
+    border-top-right-radius: 50% 100%;
+    position: absolute;
+    bottom: 0;
+    z-index: -1;
+    width: 125%; 
+    height: 20%; 
+}
