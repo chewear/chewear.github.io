@@ -1,0 +1,43 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #1b1b1b !important;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.carousel-item{
+    max-height: 40vh !important;
+}
+
+.carousel-item img{
+    max-height: 40vh !important;
+    object-fit: cover;
+    background-position: center;
+    filter: brightness(0.3);
+}
+
+.carousel-caption{
+    top: 50%;
+    left: 50%;
+    transform: translate(0, -30%);
+}
+
+button{
+    padding-left: 24px !important;
+    padding-right: 24px !important;
+}
+
+@media screen and (max-width: 768px) {
+    #info{
+        height:auto !important;
+    }
+    #footer{
+        flex-direction: column;
+    }
+}
+
+li{
+    list-style-type: none;
+}
