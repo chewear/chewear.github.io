@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>My Portfolio</title>
+<link rel="stylesheet" href="stars.css" type="text/css">
+<link rel="stylesheet" href="style.css" type="text/css">
+<link rel="stylesheet" href="js/jarallax.css" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <div id="stars"></div>
+    <div id="stars2"></div>
+    <div id="stars3"></div>
+    <div id="stars4"></div>
+    <div id="stars5"></div>
+    <div id="stars6"></div>
+    <section style="padding-bottom: 100px;">
+        <div class="box">
+            <h2 data-jarallax-element="0 200">Hello, I am Chewear!</h2>
+            <div class="container">
+                <div class="imgBx jarallax">
+                    <img src="img/img1.jpg" class="jarallax-img">
+                </div>
+                <div class="content" data-jarallax-element="100 0" data-tilt data-tilt-glare data-tilt-max-glare="0.5" >
+                    <h3>HI, I AM MYRON AN ASPIRING WEB AND MOBILE APP DEVELOPER</h3>
+                    <br>
+                    <p>A passionate and driven 3rd-year Bachelor of Science in Information Technology (BSIT) student, and I'm thrilled to have you here on my portfolio website.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="box">
+            <h2 data-jarallax-element="0 -200">EDUCATION</h2>
+            <div class="container2">
+                <div class="imgBx jarallax">
+                    <img src="img/img1.jpg" class="jarallax-img">
+                </div>
+                <div class="content" data-jarallax-element="0 100" data-tilt data-tilt-glare data-tilt-max-glare="0.5">
+                    <h3>Senior High School - ICT</h3>
+                    <p>
+                        <ion-icon name="school-outline"></ion-icon>
+                        AMA Computer College
+                    </p>
+                    <h3>Bachelor of science information technology</h3>
+                    <p>
+                        <ion-icon name="school-outline"></ion-icon>
+                        Bulacan State University 
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="box">
+            <h2 data-jarallax-element="0 200">TECH STACK</h2>
+            <div class="container">
+                <div class="imgBx jarallax">
+                    <img src="img/img1.jpg" class="jarallax-img">
+                </div>
+                <div class="content" data-jarallax-element="0 -100" data-tilt data-tilt-glare data-tilt-max-glare="0.5" >
+                    <h3>Technologies I've been working with recently</h3>
+                    <br>
+                <p class="ts-icons">
+                    <a class="html"><ion-icon name="logo-html5"></ion-icon></a>
+                    <a class="css"><ion-icon name="logo-css3"></ion-icon></a>
+                    <a class="js"><ion-icon name="logo-javascript"></ion-icon></a>
+                </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="box">
+            <h2 data-jarallax-element="0 200">CONTACTS</h2>
+            <div class="container2">
+                <div class="imgBx jarallax">
+                    <img src="img/img1.jpg" class="jarallax-img">
+                </div>
+                <div class="content" data-jarallax-element="-100 0" data-tilt data-tilt-glare data-tilt-max-glare="0.5">
+                    <h3>For any questions and inquiry</h3>
+                    <br>
+                    <h4>Email: </h4><p>myron.reyes37@gmail.com</p>
+                    <h4>Facebook: </h4><p>Bob Myron Reyes</p>
+                    <h4>Discord: </h4><p>chewear</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+    
+    <script src="js/jarallax.js"></script>
+    <script src="js/jarallax-element.js"></script>
+    <script type="text/javascript">
+        jarallax(document.querySelectorAll('.jarallax'), {
+        speed: 0.5
+        });
+    </script>
+    <script type="text/javascript" src="/js/vanilla-tilt.js"></script>
+    <script type="text/javascript">
+        VanillaTilt.init(document.querySelector(".content"), {
+            max: 25,
+            speed: 10
+        });
+        VanillaTilt.init(document.querySelectorAll(".content"));
+    </script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
