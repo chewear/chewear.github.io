@@ -1,0 +1,149 @@
+:root {
+    --background-image-url-02: url('res/01-zuitt_2.png');
+    --background-image-url-04: url('res/02-zuitt_4.png');
+    --background-image-url-08: url('res/03-zuitt_8.png');
+    --background-image-url-16: url('res/04-zuitt_16.png');
+    --background-image-url-32: url('res/05-zuitt_32.png');
+    --background-image-url-64: url('res/06-zuitt_64.png');
+    --background-image-url-128: url('res/07-zuitt_128.png');
+    --background-image-url-256: url('res/08-zuitt_256.png');
+    --background-image-url-512: url('res/09-zuitt_512.png');
+    --background-image-url-1024: url('res/10-zuitt_1024.png');
+    --background-image-url-2048: url('res/11-zuitt_2048.png');
+    --background-image-url-4096: url('res/12-zuitt_4096.png');
+    --background-image-url-8192: url('res/13-zuitt_8192.png');
+}
+
+body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
+}
+
+hr {
+    max-width: 480px;
+}
+
+#board {
+    width: 400px;
+    height: 400px;
+    background-color: #cac0b4;
+    border: 6px solid #b8ada1;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.tile {
+    width: 90px;
+    height: 90px;
+    border: 5px solid #b8ada1;
+    font-size: 25px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.x2 {
+    background-color: #eee4da;
+    color: #727371;
+}
+
+.x4 {
+    background-color: #eae0ca;
+    color: #727371;
+}
+
+.x8 {
+    background-color: #f4b17a;
+    color: white;
+}
+
+.x16 {
+    background-color: #f59575;
+    color: white;
+}
+
+.x32 {
+    background-color: #f57c5f;
+    color: white;
+}
+
+.x64 {
+    background-color: #f65d3b;
+    color: white;
+}
+
+.x128 {
+    background-color: #edce71;
+    color: white;
+}
+
+.x256 {
+    background-color: #edcc63;
+    color: white;
+}
+
+.x512 {
+    background-color: #edc651;
+    color: white;
+}
+
+.x1024 {
+    background-color: #eec744;
+    color: white;
+}
+
+.x2048 {
+    background-color: #eec230;
+    color: white;
+}
+
+.x4096 {
+    background-color: #fe3d3d;
+    color: white;
+}
+
+.x8192 {
+    background-color: #ff2020;
+    color: white;
+}
+
+@keyframes slide-from-right {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@keyframes slide-from-left {
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@keyframes slide-from-top {
+    0% {
+        transform: translateY(-100%);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+@keyframes slide-from-bottom {
+    0% {
+        transform: translateY(100%);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+
+
