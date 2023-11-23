@@ -392,17 +392,11 @@ button {
     transform-origin: left;
   }
   
-  .page-reveal .element-1 {
+  .page-reveal .element-2 {
     background: #ECB365;
     transform: scaleX(0);
-    animation: revealAnim 2500ms ease;
-  }
-  
-  .page-reveal .element-2 {
-    background: #04293A;
-    transform: scaleX(0);
     animation: revealAnim 1000ms ease;
-    animation-delay: 900ms;
+    animation-delay: 800ms;
   }
   
   .page-reveal .element-3 {
@@ -419,7 +413,7 @@ button {
     51% {
       transform-origin: right;
     }
-    90% {
+    100% {
       transform: scaleX(0);
       transform-origin: right;
     }
