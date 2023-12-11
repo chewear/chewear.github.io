@@ -1,0 +1,392 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700;900&display=swap');
+*{
+    font-family: 'Montserrat', sans-serif;
+    color: rgb(224, 224, 224);
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    overflow-x: hidden;
+    background-color: #1e2124;
+}
+
+
+nav{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav ul{
+    width: 50%;
+    border-radius: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    padding: 0;
+    z-index: 10;
+    margin-top: 40px;
+    background-color: #424549;
+    background: linear-gradient(145deg, #424549, #3b3e42);
+}
+
+ul a:hover{
+    background-color: #2e3235;
+    border-radius: 48px;
+}
+
+ul li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80px;
+    padding: 32px;
+    margin-left: 48px;
+    margin-right: 48px;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+
+
+a{
+    text-decoration: none;
+}
+
+
+
+section{
+    width: 100%;
+}
+
+.landing__section {
+    width: 100%;
+    height: 90vh;
+    background-color: #04724d;
+    background-image: url(res/landing.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 5%;
+    border-radius: 0 0 25% 0;
+   /* filter: blur(2.3px) brightness(0.8) contrast(0.8) grayscale(0.92) saturate(1.2);
+  */  filter: blur(2.3px);
+
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-size: 64px;
+}
+
+#home h1{
+    opacity: 0.3 ;
+    display: flex;
+    align-items: center;
+    margin: 0;
+    justify-content: center;
+}
+
+section{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+section h1{
+    display: flex;
+    justify-content: center;
+}
+
+section div{
+    width: 100%;
+    height: 100vh;
+}
+
+.about__container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.info h2{   
+    padding: 0;
+    margin: 0;
+    font-size: 56px;
+    font-weight: 900;
+}
+
+.info p {
+    padding-right: 128px;
+    margin-bottom: 32px;
+    margin-top: 32px;
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.img__cont{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.img__cont img{
+    width: 75%;
+    height: 80vh;
+    object-fit: cover;
+    border-radius: 24px;
+}
+
+.info{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding-left: 128px;
+    padding-right: 128px;
+    
+}
+.info a{
+    width: 15px;
+    height: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 16px;
+
+}
+
+.social{
+    display: flex;
+    flex-direction: row;
+    height: 55px;
+    justify-content: start;
+    align-items: center;
+}
+
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+  }
+  
+  /* Add a hover effect if you want */
+  .fa:hover {
+    opacity: 0.7;
+  }
+  
+  /* Set a specific color for each brand */
+  
+  /* Facebook */
+  .fa-facebook {
+    background: #3B5998;
+    color: white;
+  }
+  
+  /* Twitter */
+  .fa-twitter {
+    background: #55ACEE;
+    color: white;
+  }
+
+  .fa-instagram {
+    background-color: #bc3b72;
+    color: white;
+  }
+
+  .fa {
+    padding: 16px;
+    font-size: 30px;
+    width: 30px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+  }
+
+  .hobby{
+
+  }
+
+#about__lloyd{
+    background-color: #1e2124;
+}
+
+#about__jesi{
+    background-color: #282b30;
+    border-radius: 15% 0 15% 0;
+}
+
+.hobby h1{
+    margin-top: 56px;
+    margin-bottom: 56px;
+    font-size: 56px;
+    font-weight: 900;
+}
+
+.hobby {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.hobby__container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.hob__row{
+    height: 36vh;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    overflow: hidden;
+}
+
+.hob__row h2{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.hob__row img{
+    width: 50%;
+}
+
+.contacts__container{
+    height: 75vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-left: 100px;
+    margin-right: 100px;
+
+}
+
+#contact {
+    align-items: center;
+}
+
+#contact h1{
+    margin: 32px;
+    margin-top: 256px;
+    font-size: 56px;
+    font-weight: 900;
+    margin-bottom: 0;
+}
+
+.conts{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 30vh;
+    margin: 128px;
+    margin-top: 0;
+    padding: 100px;
+    border-radius: 64px;
+    background-color: #282b30;
+    z-index: 100;
+}
+
+span{
+    font-weight: 600;
+    
+}
+
+.conts p{
+    margin-top: 32px;
+    font-size: 24px;
+    margin-left: 32px;
+    
+}
+
+footer{
+    width: 100%;
+    margin-top: -500px;
+}
+
+.filler {
+    height: 1vh;
+}
+
+@media screen and (max-width: 1800px) { 
+
+    
+    nav ul {
+        border-radius: 38.4px; /* 48px / 1.25 */
+        margin-top: 32px; /* 40px / 1.25 */
+    }
+    
+    ul li {
+        width: 64px; /* 80px / 1.25 */
+        padding: 25.6px; /* 32px / 1.25 */
+        margin-left: 38.4px; /* 48px / 1.25 */
+        margin-right: 38.4px; /* 48px / 1.25 */
+        font-size: 12.8px; /* 16px / 1.25 */
+    }
+    
+    .img__cont img {
+        border-radius: 19.2px; /* 24px / 1.25 */
+    }
+    
+    .hobby h1 {
+        margin-top: 44.8px; /* 56px / 1.25 */
+        margin-bottom: 44.8px; /* 56px / 1.25 */
+        font-size: 44.8px; /* 56px / 1.25 */
+    }
+    
+    .contacts__container {
+        margin-left: 80px; /* 100px / 1.25 */
+        margin-right: 80px; /* 100px / 1.25 */
+    }
+    
+    .conts {
+        margin: 102.4px; /* 128px / 1.25 */
+        padding: 80px;
+        border-radius: 51.2px;
+        margin-top: 0;
+    }
+
+    .conts p{
+        margin-top: 25.6px;
+        font-size: 19.2px;
+        margin-left: 25.6px;
+        
+    }
+
+    
+    #contact h1 {
+        margin: 25.6px; /* 32px / 1.25 */
+        margin-top: 204.8px; /* 256px / 1.25 */
+        font-size: 44.8px; /* 56px / 1.25 */
+    }
+    
+    footer {
+        margin-top: -400px; /* -500px / 1.25 */
+    }
+    
+    .info h2{  
+        font-size: 44.8px;
+    }
+
+    .landing__section {
+        font-size: 51.2px;
+    }
+}
