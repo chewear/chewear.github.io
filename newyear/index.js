@@ -117,7 +117,7 @@ var lines = [
     "As of writing this code we've been talking together for already 181 days.",
     "I just want to thank you for brightening up my year.",
     "Your coming into my life is the best gift I've received this year.",
-    "I've genuinely like you!",
+    "I genuinely like you!",
     "You are very precious, so please always take care of yourself.",
     "Have a nice year ahead.",
     "Am always here for you!",
