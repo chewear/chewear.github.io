@@ -1,0 +1,206 @@
+@font-face {
+    font-family: 'Mona Sans C';
+    src:
+      url('font/Mona-Sans.ttf') format('woff2 supports variations'),
+      url('font/Mona-Sans.ttf') format('woff2-variations');
+    font-weight: 600;
+    font-stretch: 90% ;
+}
+
+.spacer {
+    height: 5vh;
+    width: 100%;
+}
+
+.marquee__part {
+    flex-shrink: 0;
+    padding: 0 4px;
+  }
+  
+.marquee {
+    color: var(--background);
+    
+    font-size: 14rem;
+    font: "Mona Sans C";
+    padding: 32px 0;
+  
+    position: relative;
+    overflow: hidden;
+    /* border: 1px solid red; */
+
+    height: 30vh;
+    width: 100%;
+
+    transform: translateY(-100%);
+}
+  
+.marquee__inner {
+    -webkit-font-smoothing: antialiased;
+    width: fit-content;
+    display: flex;
+    flex: auto;
+    flex-direction: row;
+}
+
+.contact{
+    background-color: var(--darker-text);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 110vh;
+    overflow: hidden;
+
+   
+}
+
+.contact-cont{
+    height: 80vh;
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    color: var(--background);
+}
+
+.sinfo{
+    margin-left: 2rem;
+    text-align: left;
+    margin-top: 1.5rem;
+    width: 40%;
+}
+
+.sinfo p{
+    font-size: 24px;
+    margin: 0;
+}
+
+.dimn{
+    color: var(--d-bg);
+}
+
+.sinfo h2{
+    font-size: 2rem;
+    margin-bottom: 4rem;
+    margin-top: 4rem;
+}
+
+.dl_button {
+    display: flex;
+    width: 25%;
+    padding: 1rem;
+    border-radius: 4rem;
+    border: 2px solid var(--background);
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.dl_button p{
+    font-size: 16px;
+    z-index: 6;
+}
+
+
+.dl_button::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: var(--background);
+    transition: width 0.3s ease-out, color 0.3s ease-out; /* Add color transition */
+}
+
+.dl_button:hover::before {
+    width: 100%;
+}
+
+.dl_button:hover p{
+    color: var(--darker-text);
+}
+
+
+.footer{
+    width: 100%;
+}
+
+.upper{
+    height: 85%;
+    display: flex;
+    flex-direction: row;
+}
+
+.lower{
+    width: 95%;
+    height: 15%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid var(--d-bg);
+    
+}
+
+.lower p{
+    margin:5%;
+    font-size: 24px;
+}
+
+.slice{
+    width: 50%;
+    overflow: hidden;
+}
+
+.s1 img{
+    width: 6rem;
+    height: 6rem;
+    border-radius: 64rem;
+}
+
+.s1{
+    padding: 5rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.s2{
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    padding: 3rem;
+}
+
+.scont{
+    width: 40rem;
+    height: 8rem;
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+
+    padding-top: 2rem;
+    text-align: left;
+    
+}
+
+.scont p {
+    margin-bottom: 0;
+    margin-top: 8px;
+    font-size: 24px;
+    transition: 0.3s ease; 
+}
+
+
+.scont a{
+    text-decoration: none;
+    color: var(--d-bg);
+}
+
+.scont p:hover{
+    color: var(--background);
+}
