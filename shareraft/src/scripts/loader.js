@@ -31,7 +31,7 @@ tl.to("body", {
   .to(
     "body",
     {
-      overflow: "auto"
+      overflowY: "auto"
     },
     "-=2"
   )

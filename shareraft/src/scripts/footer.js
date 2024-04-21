@@ -18,7 +18,7 @@ function setup(){
     for(let i = 0; i <12; i++ ){
         let x = random(100,width - 100);
         let y = random(100,height - 100);
-        items.push(new Item(x,y,`./assets/img${i + 1}.jpg`));
+        items.push(new Item(x,y,`src/footer_images/${i + 1}.png`));
     }
 }
 

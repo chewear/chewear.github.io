@@ -25,15 +25,16 @@
     padding-right: 20%;
     column-count: 2;
     height: 100vh;
-    margin-bottom: 5%;
+    margin-top: 5%;
+    margin-bottom: 10%;
 
     /* border: 1px solid red; */
 
 }
 
 .features{
-    width: 15vw;
-    height: 34vh;
+    width: 16vw;
+    height: 50vh;
     display: flex;
     flex-direction: column;
     align-items: center;
