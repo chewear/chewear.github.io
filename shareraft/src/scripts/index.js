@@ -14,10 +14,9 @@ const loader = new GLTFLoader();
 
 let rotationAngle = 0; 
 
-// GSAP timeline for preloader animation
+
 const tl = gsap.timeline({ paused: true });
 
-// Animation sequence for preloader
 tl.to("body", {
   overflow: "hidden"
 })
@@ -42,33 +41,31 @@ tl.to("body", {
   ease: "Power3.easeOut"
 });
 
-// Load 3D model
 loader.load(
   'src/models/scene/scene.gltf',
   function (gltf) {
     loadedObject = gltf.scene;
     scene.add(loadedObject);
 
-    // When model is fully loaded, play the rest of the timeline
+ 
     tl.play();
 
-    // Render scene after loading
+
     renderer.render(scene, camera);
   },
   function (xhr) {
     const percentLoaded = (xhr.loaded / xhr.total) * 100;
 
-    // Update loading progress
+
     console.log(percentLoaded + '% loaded');
 
-    // If model is fully loaded, trigger the preloader animation completion
-    if (percentLoaded === 100) {
+
+    if (percentLoaded >= 100) {
       tl.to(".preloader", {
         duration: 1.5,
         height: "0vh",
         ease: "Power3.easeOut",
         onComplete: () => {
-          // Hide preloader and restore body overflow
           gsap.set(".preloader", { display: "none" });
           gsap.set("body", { overflow: "auto" });
         }
