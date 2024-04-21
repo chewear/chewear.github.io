@@ -1,0 +1,62 @@
+
+// GSAP Timeline
+const tl = gsap.timeline();
+
+// Define the animations
+tl.to(container3d, {
+    duration: 4,
+    x: 200,
+    ease: 'power2.out'
+})
+.to(container3d, {
+    duration: 4,
+    x: -400,
+    ease: 'power2.inOut',
+    onComplete: () => {
+        console.log('Animation complete!');
+    }
+});
+
+// Create a ScrollTrigger for the animation
+ScrollTrigger.create({
+    trigger: '#section', // The element that triggers the animation
+    start: '-50% center', 
+    end: 'top top',
+    pin: true,
+    animation: tl, // The GSAP timeline to play
+    scrub: 1, // Smoothly animate based on scroll position
+    markers: true // Add for debugging - displays trigger and animation scrubbing
+});
+
+// GSAP animation
+const targetX = -2; // Target X coordinate
+const targetY = 1.7; // Target Y coordinate
+const targetZ = 3; // Target Z coordinate
+
+// Create a GSAP timeline for the animation
+const t2 = gsap.timeline({
+  onUpdate: () => {
+    renderer.render(scene, camera);
+  }
+});
+
+// Define the animation on camera position
+t2.to(camera.position, {
+  duration: 8,
+  x: targetX,
+  y: targetY,
+  z: targetZ,
+  ease: 'power2.out'
+});
+
+// Create a ScrollTrigger to trigger the animation
+ScrollTrigger.create({
+    trigger: '#section', // The element that triggers the animation
+    start: '-50% center', 
+    end: 'top top',
+  pin:true,
+  animation: t2, // Assign the GSAP timeline to be triggered
+  scrub: 1, // Smoothly animates the timeline when scrolling
+  markers: true // Optional: Visual markers for debugging
+});
+
