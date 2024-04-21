@@ -60,7 +60,7 @@ loader.load(
     console.log(percentLoaded + '% loaded');
 
 
-    if (percentLoaded >= 100) {
+    if (percentLoaded === Infinity) {
       tl.to(".preloader", {
         duration: 1.5,
         height: "0vh",
