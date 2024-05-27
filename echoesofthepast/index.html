@@ -25,19 +25,19 @@
             <h1>Echoes Of The Past</h1>
         </div>
         <div class="nav">
-            <a href=""><ul>Home</ul></a>
-            <a href=""><ul>Story</ul></a>
-            <a href=""><ul>Gameplay</ul></a>
-            <a href=""><ul>About Us</ul></a>
+            <a href="javascript:void(0)" onclick="sc1()"><ul>Home</ul></a>
+            <a href="javascript:void(0)" onclick="sc2()"><ul>Story</ul></a>
+            <a href="javascript:void(0)" onclick="sc3()"><ul>Gameplay</ul></a>
+            <a href="javascript:void(0)" onclick="sc4()"><ul>About Us</ul></a>
         </div>
         <div class="dl-button">
-            <button class="button">
+            <button class="button" onclick="scrollToDownload()">
                 Download
             </button>
         </div>
     </header>
     <main>
-        <div class="teaser container" onclick="playVideo()">
+        <div class="teaser container" id="c1" onclick="playVideo()">
             <button class="play" onclick="playVideo(); event.stopPropagation();">
                 <img class="playimg" src="res/play.png" alt="">
             </button>
@@ -52,7 +52,7 @@
                 <iframe frameborder="0" src="https://itch.io/embed-upload/10524312?color=111111" allowfullscreen="" width="3840" height="2160"></iframe>
             </div>
         </div>
-        <div class="concept container">
+        <div class="concept container" id="c2">
             <div class="left">
                 <img src="res/conceptimage.jpg" alt="">
             </div>
@@ -78,7 +78,7 @@
                 Your browser does not support the video tag.
             </video>
         </div>
-        <div class="gameplay storyboard container">
+        <div class="gameplay storyboard container"  id="c3">
             <h1>Gameplay</h1>
             <video class="videoPlayer" controls muted>
                 <source src="res/gameplay.mp4" type="video/mp4">
@@ -167,7 +167,7 @@
                 </a>
             </div>
         </div>
-        <div class="developers container">
+        <div class="developers container"  id="c4">
             <h1>Meet the Team</h1>
             <div class="horiContainer">
                 <div class="tcard t1">
