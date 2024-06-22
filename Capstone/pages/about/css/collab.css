@@ -1,0 +1,27 @@
+.collaboration-container {
+    width: 100%;
+    padding: 0 10% 0 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 60vh;
+}
+
+.collaboration-container h1{
+    color: var(--secondary);
+}
+
+.logo-inner {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 4rem;
+    margin-top: 2rem;
+}
+
+.logo-inner img{
+    width: 12rem;
+    height: 12rem;
+    object-fit: contain;
+}

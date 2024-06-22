@@ -1,0 +1,92 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+:root {
+    --primary: #f4f4f4;
+    --secondary: #0d3255;
+    --accent: #ffab2e;
+}
+
+html, body {
+    background-color: var(--primary);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+
+a{
+    text-decoration: none;
+    color: var(--primary);
+}
+
+
+nav {
+    padding: 0 10% 0 10%;
+    width: 100%;
+    height: 8vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    background-color: var(--secondary);
+    box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.25); 
+    position: fixed;
+    z-index: 99;
+}
+
+.brand-container {
+    display: flex;
+    align-items: center;
+}
+
+.brand-container img{
+    width: 7rem;
+}
+
+.navigation-container{
+    display: flex;
+    gap: 32px;
+    justify-content: center;
+   
+}
+
+.navigation-container ul{
+    width: 64px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-a-active{
+    color: var(--accent);
+}
+
+.navigation-container a{
+    transition: 0.3s ease-in; 
+}
+
+.navigation-container a:hover {
+    color: var(--accent);
+}
+
+
+.login-button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 72px;
+    height: 32px;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 600;
+
+    background-color: var(--accent);
+    color: var(--secondary);
+}

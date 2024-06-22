@@ -1,0 +1,29 @@
+
+.marquee__part {
+    flex-shrink: 0;
+}
+
+.marquee_container {
+    font-weight: 300;
+    font-size: 12rem;
+    padding: 0;
+    overflow: hidden;
+    background-color: var(--secondary);
+}
+
+.marquee__inner {
+    -webkit-font-smoothing: antialiased;
+    width: fit-content;
+    display: flex;
+    flex: auto;
+    flex-direction: row;
+}
+
+.marquee__part p {
+    color: var(--primary);
+}
+
+.marquee__part span {
+    color: var(--accent);
+}
+
